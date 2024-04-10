@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Spirax&display=swap');
+
+:root{
+    --rosa: #ffb2cb;
+    --bege: #f2b98d;
+    --vinho: #840838;
+    --lavanda: #98566d;
+    --cinza: #fee8f4;
+    --rosaEscuro: #dd1181;
+    --preto: #000000;
+}
+
+body{
+    font-family: "Spirax", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--cinza);
+    margin: 0;
+    padding: 0;
+    color: var(--rosa)
+}
+#p-de-menu{
+    font-size: 34px;
+    padding-left: 10px;
+    font-weight: 800;
+    color: var(--rosa)
+}
+.container{
+    display: flex;
+    background-color: var(--lavanda);
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+.container ul{
+    list-style: none;
+    display: flex;
+}
+.container ul li{
+    margin: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container ul li:hover{
+    color: var(--vinho);
+    border-bottom: 2px solid #840838;
+}
+.container ul a{
+    text-decoration: none;
+    color: var(--rosa)
+}
+.container ul a:hover{
+   color: var(--vinho)
+}
+.imagem-principal{
+    background: url("Fundo.jpg");
+    height: calc(100vh - 160px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+main #titulo-principal{
+    color: var(--vinho);
+    text-align: center;
+    font-size: 34px;
+}
+main .main-content img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 24px 0 0 0;
+}
+.container-doces{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.container-doces .card-doce{
+    margin: 20px;
+    background: #98566d;
+    border-radius: 24px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 1s;
+}
+.container-doces .card-doce:hover{
+transform: scale(1.1);
+}
+.container-doces .card-doce h3{
+    padding: 5px;
+    text-align: center;
+}
+.card-doce button{
+    width: 50%;
+    align-self: center;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--rosaEscuro);
+    color: white;
+    font-weight: bold;
+}
+.card-doce button:hover{
+    background-color: transparent;
+    box-shadow:2px 2px 5px 3px rgba(255,255,255,0.8);
+    opacity: 0.6;
+}
+.container-bebidas{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container-bebidas .card-drinks{
+    margin: 20px;
+    background: #98566d;
+    border-radius: 24px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 1s;
+}
+.container-bebidas .card-drinks:hover{
+    transform: scale(1.1);
+}
+.container-bebidas .card-drinks h3{
+    padding: 5px;
+    text-align: center;
+}
+.card-drinks button{
+    width: 50%;
+    align-self: center;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--rosaEscuro);
+    color: white;
+    font-weight: bold;
+}
+.card-drinks button:hover{
+    background-color: transparent;
+    box-shadow:2px 2px 5px 3px rgba(255,255,255,0.8);
+    opacity: 0.6;
+}
+.container-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-formulario form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3%;
+    border-radius: 5px;
+}
+.container-formulario h2{
+    color: var(--vinho);
+}
+form label{
+    font-size: 18px;
+    color: var(--vinho);
+}
+form input{
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid var(--rosaEscuro);
+    border-radius: 5px;
+}
+form textarea{
+    border-width: thin 1px;
+    margin-bottom: 20px;
+    border: 1px solid var(--rosaEscuro);
+    border-radius: 5px;
+    padding: 10px;
+}
+.container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.container-button button{
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%;
+    padding: 5px;
+    background: var(--rosaEscuro);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.container-button button:hover{
+    background-color: transparent;
+    box-shadow:2px 2px 5px 3px rgba(255,255,255,0.8);
+    color:var(--vinho) !important;
+}
+footer{
+    background: #ffffff;
+    text-align: center;
+    padding: 1%;
+    margin-top: 50px;
+}
+footer p{
+    color: var(--vinho);
+}
